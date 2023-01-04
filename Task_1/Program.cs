@@ -2,18 +2,11 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-// Создаем массив который заполняем рандомными трех значными цифрами
 
 int[] array = GetRandomArray(5, 100, 999);
 
 PrintArray(array);
 FindHonestNumber(array);
-
-int ReadInt (string argument)
-{
-    System.Console.Write($"Input {argument}: ");
-    return int.Parse(Console.ReadLine());
-}
 
 int[] GetRandomArray(int length, int minValue, int maxValue)
 {
